@@ -17,7 +17,7 @@
 
   <!-- Social & Contact Badges -->
   <a href="https://linkedin.com/in/ayush-gupta-tech">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="" alt="LinkedIn" />
   </a>
   <a href="mailto:ayush12gp@gmail.com">
     <img src="https://img.shields.io/badge/Email-ayush12gp%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
@@ -25,7 +25,7 @@
   <a href="https://github.com/AyushGupta04">
     <img src="https://img.shields.io/badge/GitHub-AyushGupta04-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="tel:+918650023533">
+  <a href="tel:+9186500XXXXX">
     <img src="https://img.shields.io/badge/Phone-%2B91--86500--23533-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Phone" />
   </a>
 

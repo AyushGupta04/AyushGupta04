@@ -16,7 +16,7 @@
   <br/><br/>
 
   <!-- Social & Contact Badges -->
-  <a href="">
+  <a href="#">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:ayush12gp@gmail.com">
@@ -214,7 +214,7 @@ Experienced **Senior Software Engineer** with **6+ years** architecting, enginee
 
   **Looking to collaborate on scalable systems, Agentic AI, or enterprise architectures? Let's talk!**
 
-  <a href="https://linkedin.com/in/ayush-gupta-tech">
+  <a href="#">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   &nbsp;

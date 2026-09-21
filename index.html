@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ayush Gupta | Senior Software Engineer & Full-Stack Architect</title>
-  <meta name="description" content="Portfolio of Ayush Gupta - Senior Software Engineer with 6+ years specializing in Java, Spring Boot, React.js, Python, Distributed Systems, and Agentic AI/RAG." />
-  <meta name="keywords" content="Ayush Gupta, Senior Software Engineer, Full Stack, Spring Boot, React.js, Python, RAG, LangChain, C-DAC, Microservices" />
+  <meta name="description" content="Portfolio of Ayush Gupta - Senior Software Engineer with 6+ years specializing in Java, Spring Boot, React.js, Python, Distributed Microservices, and Agentic AI/RAG." />
+  <meta name="keywords" content="Ayush Gupta, Senior Software Engineer, Full Stack Architect, Spring Boot, React.js, Python, RAG, LangChain, C-DAC, Microservices, System Design" />
   <meta name="author" content="Ayush Gupta" />
 
   <!-- OpenGraph / Social Sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ayush Gupta | Senior Software Engineer & Full-Stack Architect" />
-  <meta property="og:description" content="6+ years of architecting scalable enterprise systems, national-scale portals at C-DAC, and cutting-edge GenAI/RAG assistants." />
+  <meta property="og:description" content="6+ years architecting scalable enterprise systems, national-scale portals at C-DAC, and cutting-edge GenAI/RAG assistants." />
   <meta property="og:url" content="https://ayushgupta04.github.io/AyushGupta04/" />
+  <meta property="og:image" content="assets/images/project_rag_assistant.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
@@ -20,18 +21,20 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background Glow & Particle Canvas -->
+  <!-- Ambient Space Mesh & Dynamic Canvas -->
+  <div class="bg-mesh"></div>
   <div class="bg-glow bg-glow-top"></div>
   <div class="bg-glow bg-glow-middle"></div>
+  <div class="bg-glow bg-glow-bottom"></div>
   <canvas id="particle-canvas" aria-hidden="true"></canvas>
 
-  <!-- Sticky Glassmorphism Header / Navigation -->
+  <!-- Navigation Bar -->
   <header class="site-header" id="site-header">
     <nav class="nav-container" aria-label="Main Navigation">
       <a href="#hero" class="nav-brand" aria-label="Ayush Gupta Home">
@@ -40,7 +43,8 @@
 
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#skills" class="nav-link">Arsenal</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#awards" class="nav-link">Honors</a></li>
@@ -49,7 +53,7 @@
 
       <div class="nav-actions">
         <a href="mailto:ayush12gp@gmail.com" class="btn btn-sm btn-primary" id="header-cta-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           Get in Touch
         </a>
         <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
@@ -62,45 +66,77 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION WITH LIVE TERMINAL -->
     <section class="hero-section" id="hero">
-      <div class="container hero-container">
-        <div class="hero-badge">
-          <span class="status-dot"></span>
-          <span>Senior Software Engineer &bull; Available for Impactful Roles</span>
+      <div class="container hero-layout">
+        <!-- Left Hero Content -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Senior Software Engineer &bull; 6+ Years Exp</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ayush Gupta</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">Specialized in</span>
+            <span class="typewriter-text" id="typewriter-text">Full-Stack Architecture</span>
+            <span class="cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description">
+            Senior Full-Stack Engineer architecting resilient, distributed enterprise systems across <strong>Java, Spring Boot, React.js, and Python</strong>. Leading national-scale initiatives at <strong>C-DAC</strong> and designing state-of-the-art <strong>Agentic AI & RAG</strong> solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-lg btn-primary" id="hero-view-work-btn">
+              <span>View Production Systems</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#architecture" class="btn btn-lg btn-secondary" id="hero-arch-btn">
+              <span>System Architecture</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </a>
+            <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" aria-label="GitHub Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" aria-label="LinkedIn Profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
 
-        <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">Ayush Gupta</span>
-        </h1>
-
-        <div class="hero-role-wrapper">
-          <span class="role-prefix">Specialized in</span>
-          <span class="typewriter-text" id="typewriter-text">Full-Stack Architecture</span>
-          <span class="cursor" aria-hidden="true">|</span>
-        </div>
-
-        <p class="hero-description">
-          Senior Full-Stack Engineer with <strong>6+ years</strong> architecting resilient, enterprise-scale production systems in <strong>Java, Spring Boot, React.js, and Python</strong>. Leading national-scale initiatives at <strong>C-DAC</strong> and engineering state-of-the-art <strong>Agentic AI & RAG</strong> solutions.
-        </p>
-
-        <div class="hero-cta-group">
-          <a href="#projects" class="btn btn-lg btn-primary" id="hero-view-work-btn">
-            <span>Explore Featured Work</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="#contact" class="btn btn-lg btn-secondary" id="hero-contact-btn">
-            <span>Connect With Me</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          </a>
-          <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" id="hero-github-btn" aria-label="Ayush Gupta GitHub Profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            <span>GitHub</span>
-          </a>
-          <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" id="hero-linkedin-btn" aria-label="Ayush Gupta LinkedIn Profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            <span>LinkedIn</span>
-          </a>
+        <!-- Right Hero Interactive Architecture Terminal -->
+        <div class="hero-terminal-col">
+          <div class="terminal-card spotlight-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">ayush@cdac-cluster:~$ telemetry --live</div>
+              <div class="terminal-status"><span class="pulse-mini"></span> LIVE</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:01</span> <span class="term-info">[CLUSTER]</span> Initializing Spring Cloud Gateway cluster...</div>
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:02</span> <span class="term-success">[AUTH]</span> JWT RBAC Security filter chain active. 4 Tiers loaded.</div>
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:03</span> <span class="term-warn">[KAFKA]</span> Consumer group 'aetp-events' connected to 3 brokers.</div>
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:04</span> <span class="term-ai">[RAG]</span> LangChain Vector Index loaded: 145,302 enterprise chunks.</div>
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:05</span> <span class="term-cyan">[FASTAPI]</span> Asynchronous query streaming endpoint listening on :8000</div>
+              <div class="terminal-line"><span class="term-dim">2026-09-21 15:35:06</span> <span class="term-success">[PERF]</span> GLAMS DB Connection Pool optimized: p99 latency 14.2ms</div>
+              <div class="terminal-line term-active-line"><span class="term-prompt">&gt;</span> <span id="terminal-stream-msg">Simulating cluster telemetry stream...</span><span class="term-cursor">_</span></div>
+            </div>
+            <div class="terminal-footer">
+              <div class="metric-pill"><span>Nodes:</span> <strong>8 Active</strong></div>
+              <div class="metric-pill"><span>p99 Latency:</span> <strong>14ms</strong></div>
+              <div class="metric-pill"><span>Availability:</span> <strong>99.98%</strong></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -108,23 +144,27 @@
     <!-- METRICS & IMPACT COUNTER -->
     <section class="metrics-section" aria-label="Career Highlights and Metrics">
       <div class="container metrics-grid">
-        <div class="metric-card">
-          <div class="metric-number">6+</div>
+        <div class="metric-card spotlight-card">
+          <div class="metric-number" data-target="6">0</div>
+          <div class="metric-suffix">+</div>
           <div class="metric-label">Years Production Experience</div>
-          <div class="metric-sub">Enterprise Java, React & Python</div>
+          <div class="metric-sub">Enterprise Java, Spring Boot & React</div>
         </div>
-        <div class="metric-card">
-          <div class="metric-number">100+</div>
-          <div class="metric-label">Engineers & Students Mentored</div>
-          <div class="metric-sub">Full-Stack & System Design</div>
+        <div class="metric-card spotlight-card">
+          <div class="metric-number" data-target="100">0</div>
+          <div class="metric-suffix">+</div>
+          <div class="metric-label">Developers & Students Mentored</div>
+          <div class="metric-sub">Full-Stack Architecture & System Design</div>
         </div>
-        <div class="metric-card">
-          <div class="metric-number">2</div>
+        <div class="metric-card spotlight-card">
+          <div class="metric-number" data-target="2">0</div>
+          <div class="metric-suffix"></div>
           <div class="metric-label">Prestigious Honors Won</div>
           <div class="metric-sub">Innovation & Emerging Tech Awards</div>
         </div>
-        <div class="metric-card">
-          <div class="metric-number">50+</div>
+        <div class="metric-card spotlight-card">
+          <div class="metric-number" data-target="50">0</div>
+          <div class="metric-suffix">+</div>
           <div class="metric-label">Production Defects Resolved</div>
           <div class="metric-sub">99.9% High-Availability Uptime</div>
         </div>
@@ -135,46 +175,53 @@
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Leadership & Craft</span>
-          <h2 class="section-title">Architecting Scalable Solutions with Precision</h2>
+          <span class="section-badge">Leadership & Engineering Craft</span>
+          <h2 class="section-title">Architecting Resilient Enterprise Systems</h2>
+          <p class="section-subtitle">Bridging complex backend distributed architecture with intuitive user experiences.</p>
         </div>
 
         <div class="about-grid">
-          <div class="about-text-card">
-            <h3>Full-Stack Engineer & Tech Lead</h3>
+          <div class="about-text-card spotlight-card">
+            <h3>Senior Software Engineer & Technical Lead</h3>
             <p>
-              I specialize in engineering high-throughput, secure distributed systems and intuitive user interfaces. With over 6 years of experience spanning backend architecture, microservices, database tuning, and frontend state management, I have spearheaded mission-critical platforms at the <strong>Centre for Development of Advanced Computing (C-DAC)</strong>.
+              I am a **Senior Full-Stack Software Engineer** with over **6 years of experience** architecting, scaling, and maintaining mission-critical applications. At the **Centre for Development of Advanced Computing (C-DAC)**, I have led technical design and end-to-end execution for multi-tiered national platforms that serve institutional stakeholders across India.
             </p>
             <p>
-              My recent focus centers around integrating <strong>Generative AI, Retrieval-Augmented Generation (RAG), and Agentic Workflows</strong> with enterprise application backends, combining cutting-edge LLM orchestration with robust Spring Boot and FastAPI microservices.
+              My expertise centers around designing robust **Microservices, Event-Driven Architectures, and Database Indexing**, as well as orchestrating **Agentic AI & Retrieval-Augmented Generation (RAG)** systems using Python, FastAPI, and LangChain.
             </p>
             <div class="about-highlights">
               <div class="highlight-item">
-                <div class="highlight-icon">🏛️</div>
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                </div>
                 <div>
-                  <strong>National Scale Platforms</strong>
-                  <p>Developed AETP and GLAMS platforms at C-DAC handling multi-tenant workflows and high-concurrency workloads.</p>
+                  <strong>National-Scale Enterprise Governance</strong>
+                  <p>Delivered C-DAC's AETP & GLAMS platforms ensuring 100% GIGW compliance and strict multi-tier RBAC security.</p>
                 </div>
               </div>
               <div class="highlight-item">
-                <div class="highlight-icon">⚡</div>
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
                 <div>
-                  <strong>Performance Optimization</strong>
-                  <p>Boosted frontend page speeds by ~30% and optimized database queries, connection pooling, and indexing.</p>
+                  <strong>High-Throughput & Latency Optimization</strong>
+                  <p>Decreased client bundle load times by ~30% and engineered bulk onboarding workflows handling thousands of concurrent test takers.</p>
                 </div>
               </div>
               <div class="highlight-item">
-                <div class="highlight-icon">🤖</div>
+                <div class="highlight-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                </div>
                 <div>
-                  <strong>Agentic AI & LLMs</strong>
-                  <p>Designed end-to-end RAG workflows with LangChain, LangGraph, vector search, and containerized microservices.</p>
+                  <strong>Agentic AI & Knowledge Retrieval</strong>
+                  <p>Engineered full-stack RAG solutions enabling natural language exploration over multi-format organizational documents.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="about-sidebar">
-            <div class="profile-card">
+            <div class="profile-card spotlight-card">
               <div class="profile-avatar-wrap">
                 <div class="profile-avatar-placeholder">AG</div>
               </div>
@@ -189,7 +236,7 @@
                 </div>
                 <div class="detail-row">
                   <span class="detail-label">Experience:</span>
-                  <span class="detail-value">6+ Years</span>
+                  <span class="detail-value">6+ Years (Production)</span>
                 </div>
                 <div class="detail-row">
                   <span class="detail-label">Education:</span>
@@ -222,125 +269,220 @@
       </div>
     </section>
 
-    <!-- TECHNICAL ARSENAL & SKILLS SECTION -->
+    <!-- SYSTEM DESIGN & ARCHITECTURE SECTION (Senior Engineer Hallmark) -->
+    <section class="section architecture-section" id="architecture">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Core Engineering Principles</span>
+          <h2 class="section-title">System Architecture & Design</h2>
+          <p class="section-subtitle">How I engineer distributed fault-tolerance, high concurrency, and secure multi-tenant backends.</p>
+        </div>
+
+        <div class="arch-grid">
+          <!-- Pillar 1 -->
+          <div class="arch-card spotlight-card">
+            <div class="arch-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3 class="arch-title">Event-Driven Microservices</h3>
+            <p class="arch-desc">
+              Decoupling backend domains using <strong>Apache Kafka</strong> event streaming and asynchronous publish-subscribe patterns. Ensures zero single points of failure across large training lifecycles.
+            </p>
+            <div class="arch-pills">
+              <span class="arch-pill">Kafka Brokers</span>
+              <span class="arch-pill">Spring Cloud Gateway</span>
+              <span class="arch-pill">Async Decoupling</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="arch-card spotlight-card">
+            <div class="arch-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+            </div>
+            <h3 class="arch-title">Stateful Agentic RAG</h3>
+            <p class="arch-desc">
+              Multi-stage vector chunking, semantic similarity retrieval with LangChain & LangGraph, and streaming FastAPI response pipelines with source verification.
+            </p>
+            <div class="arch-pills">
+              <span class="arch-pill">Vector Embeddings</span>
+              <span class="arch-pill">LangGraph Multi-Agent</span>
+              <span class="arch-pill">FastAPI Stream</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="arch-card spotlight-card">
+            <div class="arch-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="arch-title">High-Concurrency Database Tuning</h3>
+            <p class="arch-desc">
+              Optimized complex SQL execution plans, B-Tree & composite indexing, HikariCP connection pooling, and multi-tenant partitioning across PostgreSQL & MySQL.
+            </p>
+            <div class="arch-pills">
+              <span class="arch-pill">Query Profiling</span>
+              <span class="arch-pill">Composite Indexing</span>
+              <span class="arch-pill">HikariCP Tuning</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="arch-card spotlight-card">
+            <div class="arch-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3 class="arch-title">Enterprise Security & Compliance</h3>
+            <p class="arch-desc">
+              Multi-tiered JWT authentication, granular Role-Based Access Control (RBAC), OWASP top-10 mitigation, and strict compliance with national GIGW standards.
+            </p>
+            <div class="arch-pills">
+              <span class="arch-pill">JWT + Spring Security</span>
+              <span class="arch-pill">GIGW Compliance</span>
+              <span class="arch-pill">OWASP Hardened</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL SECTION -->
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Core Competencies</span>
+          <span class="section-badge">Battle-Tested Skills</span>
           <h2 class="section-title">Technical Arsenal</h2>
-          <p class="section-subtitle">A balanced tech stack designed for distributed reliability, performance, and developer velocity.</p>
+          <p class="section-subtitle">Proficiencies refined across 6+ years of scalable production engineering.</p>
         </div>
 
         <!-- Filter Tabs -->
         <div class="skills-filter-container">
-          <button class="filter-btn active" data-filter="all" id="skill-filter-all">All Capabilities</button>
-          <button class="filter-btn" data-filter="backend" id="skill-filter-backend">Backend & Architecture</button>
-          <button class="filter-btn" data-filter="frontend" id="skill-filter-frontend">Frontend & UI</button>
-          <button class="filter-btn" data-filter="ai" id="skill-filter-ai">Agentic AI & LLMs</button>
-          <button class="filter-btn" data-filter="data" id="skill-filter-data">Databases & DevOps</button>
+          <button class="filter-btn active" data-filter="all">All Arsenal</button>
+          <button class="filter-btn" data-filter="backend">Backend & Microservices</button>
+          <button class="filter-btn" data-filter="frontend">Frontend Engineering</button>
+          <button class="filter-btn" data-filter="ai">Agentic AI & LLMs</button>
+          <button class="filter-btn" data-filter="data">Databases & DevOps</button>
         </div>
 
-        <!-- Skills Grid -->
+        <!-- Skills Grid with Brand Icons -->
         <div class="skills-grid" id="skills-grid">
-          <!-- Backend & Arch -->
-          <div class="skill-card" data-category="backend">
-            <div class="skill-icon-wrap">☕</div>
+          <!-- Java & Spring Boot -->
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#ED8B00"><path d="M8.85 16.82s-.97.05-1.39.38c-1.63 1.28 1.49 2.11 2.22 2.15 2.16.14 4.54-.42 6.55-1.74.45-.3.8-.75.7-1.3-.12-.66-.82-.77-1.38-.85-.82-.12-3.08.35-6.7 1.36zm6.39-2.58c1.55-.91 2.97-2.18 2.05-3.69-.64-1.05-2.02-1.48-3.09-1.92-1.49-.61-3.01-1.3-3.83-2.69-.47-.8-.57-1.84-.33-2.73-1.63 1.15-2.54 3.09-2.29 5.09.2 1.63 1.16 3.03 2.5 3.99 1.48 1.05 3.32 1.35 4.99 1.95zM7.2 21.43c2.72.63 5.92.51 8.52-.39 1.13-.39 2.24-.96 3.01-1.85.34-.39.56-.89.5-1.4-.08-.68-.69-1.04-1.27-1.18-.75-.18-2.63.26-6.42 1.58-1.76.62-3.23.95-4.34 1.24z"/></svg>
+            </div>
             <h4 class="skill-title">Java & Spring Boot</h4>
-            <p class="skill-desc">Spring Security, JPA/Hibernate, Actuator, Microservices, and REST API engineering for high concurrency.</p>
+            <p class="skill-desc">Spring Security, JPA/Hibernate, Microservices, and REST API engineering for high-concurrency systems.</p>
             <span class="skill-tag">Expert &bull; 6+ Years</span>
           </div>
 
-          <div class="skill-card" data-category="backend">
-            <div class="skill-icon-wrap">🛡️</div>
-            <h4 class="skill-title">Auth & RBAC</h4>
-            <p class="skill-desc">JWT token lifecycles, OAuth2, granular Role-Based Access Control, session management with Passport.js.</p>
-            <span class="skill-tag">Enterprise Security</span>
+          <!-- Spring Security & RBAC -->
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#6DB33F"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+            </div>
+            <h4 class="skill-title">Enterprise Security & RBAC</h4>
+            <p class="skill-desc">JWT token lifecycles, OAuth2, granular Role-Based Access Control, and session security.</p>
+            <span class="skill-tag">Enterprise Architecture</span>
           </div>
 
-          <div class="skill-card" data-category="backend">
-            <div class="skill-icon-wrap">📡</div>
-            <h4 class="skill-title">Kafka & Microservices</h4>
-            <p class="skill-desc">Event-driven architecture, asynchronous message queues with Apache Kafka, and WebSocket real-time feeds.</p>
+          <!-- Kafka & Microservices -->
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <h4 class="skill-title">Kafka & Event-Driven Systems</h4>
+            <p class="skill-desc">Distributed event streaming, message broker decoupling with Apache Kafka, and WebSocket feeds.</p>
             <span class="skill-tag">Distributed Systems</span>
           </div>
 
-          <div class="skill-card" data-category="backend">
-            <div class="skill-icon-wrap">🟢</div>
-            <h4 class="skill-title">Node.js & Python</h4>
-            <p class="skill-desc">Express services, Python FastAPI async endpoints, automation scripts, and backend integrations.</p>
-            <span class="skill-tag">Full-Stack Polyglot</span>
+          <!-- Python & FastAPI -->
+          <div class="skill-card spotlight-card" data-category="backend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#3776AB"><path d="M11.91 0c-3.15 0-5.09.43-5.09 2.58v1.94h5.21v.65H4.26C1.72 5.17 0 6.64 0 9.77c0 3.01 1.76 4.6 4.26 4.6h1.42v-2.06c0-1.89 1.48-3.4 3.48-3.4h5.22V6.66H9.17c-.77 0-1.38-.63-1.38-1.42 0-.79.61-1.42 1.38-1.42h7.91c2.25 0 3.82-1.37 3.82-3.82C20.9 0 16.43 0 11.91 0zm-2.09 1.55c.46 0 .84.38.84.84 0 .46-.38.84-.84.84-.46 0-.84-.38-.84-.84 0-.46.38-.84.84-.84zm2.27 7.54c-2.25 0-3.82 1.37-3.82 3.82 0 2.54 1.48 4.21 4.54 4.21h2.64v-1.94H10.24v-.65h7.77c2.54 0 4.26-1.47 4.26-4.6 0-3.01-1.76-4.6-4.26-4.6h-1.42v2.06c0 1.89-1.48 3.4-3.48 3.4h-5.22v2.25h5.21c.77 0 1.38.63 1.38 1.42 0 .79-.61 1.42-1.38 1.42H7.19zm3.82 13.36c-.46 0-.84-.38-.84-.84 0-.46.38-.84.84-.84.46 0 .84.38.84.84 0 .46-.38.84-.84.84z"/></svg>
+            </div>
+            <h4 class="skill-title">Python & FastAPI</h4>
+            <p class="skill-desc">Asynchronous API endpoints, AI microservices, background task orchestration, and system automation.</p>
+            <span class="skill-tag">High Performance</span>
           </div>
 
-          <!-- Frontend -->
-          <div class="skill-card" data-category="frontend">
-            <div class="skill-icon-wrap">⚛️</div>
+          <!-- React.js & Redux -->
+          <div class="skill-card spotlight-card" data-category="frontend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#61DAFB"><path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm0-7C7.03 2.5 2.5 4.51 2.5 7c0 2.1 3.28 3.86 7.6 4.34-1.28-1.32-2.1-2.92-2.1-4.84 0-.17.01-.33.03-.5C5.17 6.4 3.5 7.15 3.5 7c0-.9 2.5-2.5 8.5-2.5 2.76 0 5.16.34 6.78.9-.38-.97-.93-1.85-1.63-2.61C15.42 2.62 13.78 2.5 12 2.5z"/></svg>
+            </div>
             <h4 class="skill-title">React.js & Redux</h4>
-            <p class="skill-desc">SPA architecture, Redux Toolkit, custom hooks, virtual DOM optimization, and component modularity.</p>
+            <p class="skill-desc">Component architecture, custom hooks, virtual DOM optimization, state normalization, and SPA velocity.</p>
             <span class="skill-tag">Advanced UI</span>
           </div>
 
-          <div class="skill-card" data-category="frontend">
-            <div class="skill-icon-wrap">📘</div>
-            <h4 class="skill-title">TypeScript & JavaScript</h4>
-            <p class="skill-desc">Strict type safety, ES6+ idioms, asynchronous patterns, and cross-browser resilience.</p>
+          <!-- TypeScript & JavaScript -->
+          <div class="skill-card spotlight-card" data-category="frontend">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#3178C6"><path d="M1.5 0h21A1.5 1.5 0 0 1 24 1.5v21a1.5 1.5 0 0 1-1.5 1.5h-21A1.5 1.5 0 0 1 0 22.5v-21A1.5 1.5 0 0 1 1.5 0zm10.74 13.43H9.42V20H7.28v-6.57H4.46V11.6h7.78v1.83zm8.34 2.87c0 1.25-.46 2.22-1.38 2.9-.92.68-2.18 1.02-3.79 1.02-1.12 0-2.17-.18-3.15-.55v-2.07c.96.52 1.95.78 2.98.78.88 0 1.53-.17 1.96-.5.43-.34.65-.8.65-1.38 0-.49-.15-.9-.46-1.21-.31-.32-.82-.6-1.54-.86l-1.07-.38c-1.16-.42-2.03-.97-2.6-1.66-.57-.69-.86-1.55-.86-2.58 0-1.19.46-2.13 1.38-2.82.92-.69 2.13-1.03 3.63-1.03.99 0 1.93.16 2.83.47v2c-.88-.43-1.74-.65-2.58-.65-.79 0-1.38.16-1.77.47-.39.31-.59.73-.59 1.25 0 .44.15.82.46 1.13.31.31.81.58 1.5.82l1.07.38c1.23.44 2.14 1 2.73 1.69.59.69.88 1.58.88 2.67z"/></svg>
+            </div>
+            <h4 class="skill-title">TypeScript & Modern JS</h4>
+            <p class="skill-desc">Strict type safety, ES2024 idioms, async/await concurrency, generic interfaces, and clean code.</p>
             <span class="skill-tag">Core Frontend</span>
           </div>
 
-          <div class="skill-card" data-category="frontend">
-            <div class="skill-icon-wrap">🎨</div>
-            <h4 class="skill-title">Tailwind CSS & Material UI</h4>
-            <p class="skill-desc">Accessible UI systems, responsive grids, dark modes, animations, and GIGW compliance styling.</p>
-            <span class="skill-tag">Design Systems</span>
-          </div>
-
-          <!-- AI & LLM -->
-          <div class="skill-card" data-category="ai">
-            <div class="skill-icon-wrap">🧠</div>
-            <h4 class="skill-title">RAG & Vector Search</h4>
-            <p class="skill-desc">Retrieval-Augmented Generation workflows over enterprise documents using vector embeddings and similarity index.</p>
+          <!-- RAG & Vector Search -->
+          <div class="skill-card spotlight-card" data-category="ai">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#A855F7"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h4 class="skill-title">RAG & Vector Retrieval</h4>
+            <p class="skill-desc">Enterprise document chunking, semantic vector indexing, cosine similarity, and contextual grounding.</p>
             <span class="skill-tag">GenAI Systems</span>
           </div>
 
-          <div class="skill-card" data-category="ai">
-            <div class="skill-icon-wrap">🦜</div>
+          <!-- LangChain & LangGraph -->
+          <div class="skill-card spotlight-card" data-category="ai">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#38BDF8"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5 10 5 10-5-5-2.5-5 2.5z"/></svg>
+            </div>
             <h4 class="skill-title">LangChain & LangGraph</h4>
-            <p class="skill-desc">Multi-agent orchestration, stateful agent graphs, memory persistence, and tool-augmented reasoning.</p>
+            <p class="skill-desc">Multi-agent orchestration, stateful conversational graphs, tool calling, and structured prompt engineering.</p>
             <span class="skill-tag">Agentic AI</span>
           </div>
 
-          <div class="skill-card" data-category="ai">
-            <div class="skill-icon-wrap">🤖</div>
-            <h4 class="skill-title">AI Pair Programming</h4>
-            <p class="skill-desc">Supercharging engineering velocity via Claude Code, GitHub Copilot, and LLM-assisted code review pipelines.</p>
-            <span class="skill-tag">Developer Velocity</span>
-          </div>
-
-          <!-- Databases & DevOps -->
-          <div class="skill-card" data-category="data">
-            <div class="skill-icon-wrap">🐘</div>
+          <!-- PostgreSQL & MySQL -->
+          <div class="skill-card spotlight-card" data-category="data">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#336791"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4.35 21l3.54-.93C9.33 20.66 10.63 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 15c-1.15 0-2.24-.28-3.21-.77l-.23-.12-2.1.55.56-2.05-.15-.24C6.35 14.4 6 13.23 6 12c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6z"/></svg>
+            </div>
             <h4 class="skill-title">PostgreSQL & MySQL</h4>
-            <p class="skill-desc">Complex query tuning, schema modeling, transaction isolation, index optimization, and connection pools.</p>
+            <p class="skill-desc">Complex query tuning, transaction isolation, schema migrations, composite indexes, and connection pools.</p>
             <span class="skill-tag">Relational Data</span>
           </div>
 
-          <div class="skill-card" data-category="data">
-            <div class="skill-icon-wrap">🍃</div>
+          <!-- MongoDB -->
+          <div class="skill-card spotlight-card" data-category="data">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#47A248"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
             <h4 class="skill-title">MongoDB</h4>
-            <p class="skill-desc">Document storage, aggregation pipelines, flexible schema designs, and indexing strategies.</p>
+            <p class="skill-desc">Aggregation pipelines, polymorphic document models, geospatial queries, and distributed clustering.</p>
             <span class="skill-tag">NoSQL Data</span>
           </div>
 
-          <div class="skill-card" data-category="data">
-            <div class="skill-icon-wrap">🐳</div>
-            <h4 class="skill-title">Docker & AWS</h4>
-            <p class="skill-desc">Containerization, multi-stage builds, cloud infrastructure on AWS, CI/CD pipelines with GitHub Actions.</p>
-            <span class="skill-tag">DevOps & Cloud</span>
+          <!-- Docker & AWS -->
+          <div class="skill-card spotlight-card" data-category="data">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#2496ED"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 0 0 .186-.186V3.574a.186.186 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.186m0 2.715h2.118a.187.187 0 0 0 .186-.186V6.29a.187.187 0 0 0-.186-.185h-2.118a.185.185 0 0 0-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 0 0 .184-.186V6.29a.185.185 0 0 0-.185-.185H8.1a.185.185 0 0 0-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 0 0 .185-.186V6.29a.185.185 0 0 0-.185-.185H5.136a.186.186 0 0 0-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.118a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 0 0 .184-.185V9.006a.185.185 0 0 0-.184-.186H8.1a.185.185 0 0 0-.185.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H5.136a.186.186 0 0 0-.186.185v1.888c0 .102.084.185.186.185m-2.928 0h2.119a.185.185 0 0 0 .185-.185V9.006a.185.185 0 0 0-.185-.186H2.208a.185.185 0 0 0-.185.185v1.888c0 .102.082.185.185.185m21.722.569c-.27-.184-.816-.36-1.57-.36-.454 0-.918.06-1.393.18-.32.08-.654.19-.997.33-.284-.66-.757-1.196-1.424-1.547-.8-.42-1.745-.536-2.673-.342-.09.02-.178.046-.266.074a4.12 4.12 0 0 0-.19-1.344c-.45-1.428-1.583-2.45-3.033-2.735a4.8 4.8 0 0 0-.928-.09H1.47a.5.5 0 0 0-.5.5v8.03c0 3.018 2.012 5.568 4.887 6.223 3.014.686 6.136.21 8.895-1.353 3.32-1.879 5.37-5.32 5.37-9.155a5.7 5.7 0 0 0-.196-1.488z"/></svg>
+            </div>
+            <h4 class="skill-title">Docker & AWS Cloud</h4>
+            <p class="skill-desc">Containerization, multi-stage Docker builds, AWS EC2, S3, RDS, GitHub Actions CI/CD automation.</p>
+            <span class="skill-tag">Cloud & DevOps</span>
           </div>
 
-          <div class="skill-card" data-category="data">
-            <div class="skill-icon-wrap">📊</div>
+          <!-- Grafana & Observability -->
+          <div class="skill-card spotlight-card" data-category="data">
+            <div class="skill-brand-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#F46800"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5v-9l6 4.5-6 4.5z"/></svg>
+            </div>
             <h4 class="skill-title">Grafana & Elasticsearch</h4>
-            <p class="skill-desc">Centralized log aggregation, real-time metrics dashboards, observability, and production alert management.</p>
+            <p class="skill-desc">Distributed tracing, log aggregation, Prometheus metrics, and production monitoring dashboards.</p>
             <span class="skill-tag">Observability</span>
           </div>
         </div>
@@ -351,16 +493,16 @@
     <section class="section experience-section" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Career Trajectory</span>
+          <span class="section-badge">Proven Track Record</span>
           <h2 class="section-title">Professional Experience</h2>
-          <p class="section-subtitle">Leading backend architecture and full-stack delivery for national-scale enterprise projects.</p>
+          <p class="section-subtitle">Over 6 years of leading engineering initiatives for government and enterprise platforms.</p>
         </div>
 
         <div class="timeline">
           <!-- C-DAC -->
           <div class="timeline-item">
             <div class="timeline-marker"></div>
-            <div class="timeline-content">
+            <div class="timeline-content spotlight-card">
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Senior Software Engineer</h3>
@@ -369,28 +511,30 @@
                 <div class="timeline-period">Nov 2021 – Present</div>
               </div>
 
+              <!-- AETP -->
               <div class="experience-subproject">
                 <div class="subproject-title">
                   <strong>Administrative Education Training Portal (AETP)</strong>
                   <span class="badge-mini">Enterprise Architecture</span>
                 </div>
-                <p class="subproject-desc">Architected and developed end-to-end modules for an enterprise training management platform covering applications, dynamic approvals, calendar scheduling, attendance, and budget governance.</p>
+                <p class="subproject-desc">Architected and delivered end-to-end modules for an enterprise training management platform covering applications, dynamic approvals, calendar scheduling, attendance, and budget governance.</p>
                 <ul class="subproject-bullets">
-                  <li>Engineered robust JWT authentication and fine-grained Role-Based Access Control (RBAC) across distinct administrative tiers.</li>
-                  <li>Constructed multi-level configurable approval and rejection workflow engines evaluating dynamic business rules.</li>
+                  <li>Designed and implemented JWT-based authentication and role-based access control (RBAC) supporting multi-tier user roles and granular data isolation.</li>
+                  <li>Constructed dynamic approval/rejection state machine evaluating eligibility rules across administrative levels.</li>
                   <li>Delivered bulk attendance exports to Excel, dynamic calendar scheduling, and automated lifecycle alerts.</li>
                   <li>Guaranteed strict compliance with applicable GIGW (Guidelines for Indian Government Websites) standards.</li>
                 </ul>
               </div>
 
+              <!-- GLAMS -->
               <div class="experience-subproject">
                 <div class="subproject-title">
                   <strong>Gamified Learning Assessment Management System (GLAMS)</strong>
-                  <span class="badge-mini">Award Winning Platform</span>
+                  <span class="badge-mini">Award-Winning Platform</span>
                 </div>
-                <p class="subproject-desc">Delivered high-throughput assessment platform across React.js, Java backend microservices, and databases under tight SLAs.</p>
+                <p class="subproject-desc">Designed and engineered high-throughput assessment platform across React.js, backend microservices, and databases under tight SLAs.</p>
                 <ul class="subproject-bullets">
-                  <li>Engineered bulk onboarding workflows to handle large-scale concurrent user registrations seamlessly.</li>
+                  <li>Engineered mass onboarding workflows to handle large-scale concurrent user registrations seamlessly.</li>
                   <li>Optimized complex SQL queries, database indexing, and connection pools, significantly slashing API response latencies.</li>
                   <li>Spearheaded critical production issue resolution, security hardening, and vulnerability mitigation.</li>
                   <li>Mentored junior engineers on code quality, architecture patterns, and clean testing methodologies.</li>
@@ -402,7 +546,7 @@
           <!-- Keshav Manglam Impex -->
           <div class="timeline-item">
             <div class="timeline-marker"></div>
-            <div class="timeline-content">
+            <div class="timeline-content spotlight-card">
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Software Developer</h3>
@@ -422,7 +566,7 @@
           <!-- Balajee Infratech -->
           <div class="timeline-item">
             <div class="timeline-marker"></div>
-            <div class="timeline-content">
+            <div class="timeline-content spotlight-card">
               <div class="timeline-header">
                 <div>
                   <h3 class="timeline-role">Software Developer</h3>
@@ -441,97 +585,130 @@
       </div>
     </section>
 
-    <!-- FEATURED PROJECTS SECTION -->
+    <!-- FEATURED PROJECTS SHOWCASE WITH REAL IMAGES -->
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Engineering Showcase</span>
+          <span class="section-badge">Flagship Systems</span>
           <h2 class="section-title">Featured Enterprise & AI Projects</h2>
-          <p class="section-subtitle">Real-world systems engineered for scale, intelligent information retrieval, and high reliability.</p>
+          <p class="section-subtitle">Real-world production architectures engineered for scale, intelligent retrieval, and mission-critical reliability.</p>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1: Enterprise AI Assistant -->
-          <article class="project-card featured-highlight" id="project-ai-assistant">
-            <div class="project-header">
-              <span class="project-tag">Agentic AI / GenAI</span>
-              <span class="project-status">Featured Architecture</span>
+          <article class="project-card spotlight-card featured-highlight" id="project-ai-assistant">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project_rag_assistant.jpg" alt="Enterprise AI Knowledge Assistant Dashboard" class="project-preview-img" loading="lazy" />
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary zoom-btn" data-img="assets/images/project_rag_assistant.jpg" data-title="AI-Powered Enterprise Knowledge Assistant">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  Inspect UI
+                </button>
+              </div>
             </div>
-            <h3 class="project-title">AI-Powered Enterprise Knowledge Assistant</h3>
-            <p class="project-summary">
-              A full-stack RAG (Retrieval-Augmented Generation) application designed for enterprise document intelligence. Allows stakeholders to query large corpuses of technical and organizational documents via natural language conversations with cited source contexts.
-            </p>
-            <div class="project-key-points">
-              <div class="point-item"><strong>Retrieval:</strong> LangChain RAG pipeline with semantic chunking & vector search.</div>
-              <div class="point-item"><strong>Backend:</strong> High-speed asynchronous endpoints powered by Python and FastAPI.</div>
-              <div class="point-item"><strong>Frontend:</strong> Reactive conversational interface built with React.js.</div>
-              <div class="point-item"><strong>Data & Ops:</strong> PostgreSQL metadata storage & Dockerized container deployment.</div>
-            </div>
-            <div class="project-tech-badges">
-              <span class="badge">Python</span>
-              <span class="badge">FastAPI</span>
-              <span class="badge">LangChain</span>
-              <span class="badge">RAG</span>
-              <span class="badge">React.js</span>
-              <span class="badge">PostgreSQL</span>
-              <span class="badge">Docker</span>
+            <div class="project-card-body">
+              <div class="project-header">
+                <span class="project-tag">Agentic AI &bull; GenAI</span>
+                <span class="project-status">Featured Architecture</span>
+              </div>
+              <h3 class="project-title">AI-Powered Enterprise Knowledge Assistant</h3>
+              <p class="project-summary">
+                A full-stack RAG (Retrieval-Augmented Generation) application designed for enterprise document intelligence. Allows stakeholders to query large corpuses of technical and organizational documents via natural language conversations with cited source contexts.
+              </p>
+              <div class="project-key-points">
+                <div class="point-item"><strong>Retrieval:</strong> LangChain RAG pipeline with semantic chunking & vector search.</div>
+                <div class="point-item"><strong>Backend:</strong> High-speed asynchronous endpoints powered by Python and FastAPI.</div>
+                <div class="point-item"><strong>Frontend:</strong> Reactive conversational interface built with React.js.</div>
+                <div class="point-item"><strong>Data & Ops:</strong> PostgreSQL metadata storage & Dockerized container deployment.</div>
+              </div>
+              <div class="project-tech-badges">
+                <span class="badge">Python</span>
+                <span class="badge">FastAPI</span>
+                <span class="badge">LangChain</span>
+                <span class="badge">RAG</span>
+                <span class="badge">React.js</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Docker</span>
+              </div>
             </div>
           </article>
 
           <!-- Project 2: AETP Platform -->
-          <article class="project-card" id="project-aetp">
-            <div class="project-header">
-              <span class="project-tag">Enterprise Web</span>
-              <span class="project-status">C-DAC Production</span>
+          <article class="project-card spotlight-card" id="project-aetp">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project_aetp_cdac.jpg" alt="AETP C-DAC Portal Dashboard" class="project-preview-img" loading="lazy" />
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary zoom-btn" data-img="assets/images/project_aetp_cdac.jpg" data-title="Administrative Education Training Portal (AETP)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  Inspect UI
+                </button>
+              </div>
             </div>
-            <h3 class="project-title">Administrative Education Training Portal (AETP)</h3>
-            <p class="project-summary">
-              National-scale educational governance system architected to automate training lifecycle management, multi-tiered approval workflows, attendance records, and departmental budget allotments across institutional hierarchies.
-            </p>
-            <div class="project-key-points">
-              <div class="point-item"><strong>Security:</strong> JWT authentication paired with granular Role-Based Access Control.</div>
-              <div class="point-item"><strong>Workflows:</strong> Dynamic approval/rejection state machine evaluating business rules.</div>
-              <div class="point-item"><strong>Data Export:</strong> High-throughput bulk attendance export to Excel for administrators.</div>
-              <div class="point-item"><strong>Compliance:</strong> Built to satisfy official Indian GIGW accessibility guidelines.</div>
-            </div>
-            <div class="project-tech-badges">
-              <span class="badge">Java</span>
-              <span class="badge">Spring Boot</span>
-              <span class="badge">Spring Security</span>
-              <span class="badge">JPA / Hibernate</span>
-              <span class="badge">PostgreSQL</span>
-              <span class="badge">REST APIs</span>
+            <div class="project-card-body">
+              <div class="project-header">
+                <span class="project-tag">Enterprise Web</span>
+                <span class="project-status">C-DAC Production</span>
+              </div>
+              <h3 class="project-title">Administrative Education Training Portal (AETP)</h3>
+              <p class="project-summary">
+                National-scale educational governance system architected to automate training lifecycle management, multi-tiered approval workflows, attendance records, and departmental budget allotments across institutional hierarchies.
+              </p>
+              <div class="project-key-points">
+                <div class="point-item"><strong>Security:</strong> JWT authentication paired with granular Role-Based Access Control.</div>
+                <div class="point-item"><strong>Workflows:</strong> Dynamic approval/rejection state machine evaluating business rules.</div>
+                <div class="point-item"><strong>Data Export:</strong> High-throughput bulk attendance export to Excel for administrators.</div>
+                <div class="point-item"><strong>Compliance:</strong> Built to satisfy official Indian GIGW accessibility guidelines.</div>
+              </div>
+              <div class="project-tech-badges">
+                <span class="badge">Java</span>
+                <span class="badge">Spring Boot</span>
+                <span class="badge">Spring Security</span>
+                <span class="badge">JPA / Hibernate</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">REST APIs</span>
+              </div>
             </div>
           </article>
 
           <!-- Project 3: GLAMS Platform -->
-          <article class="project-card" id="project-glams">
-            <div class="project-header">
-              <span class="project-tag">Gamified Learning</span>
-              <span class="project-status">Innovation Award Winner</span>
+          <article class="project-card spotlight-card" id="project-glams">
+            <div class="project-image-wrapper">
+              <img src="assets/images/project_glams_cdac.jpg" alt="GLAMS C-DAC Assessment Platform" class="project-preview-img" loading="lazy" />
+              <div class="project-img-overlay">
+                <button class="btn btn-sm btn-primary zoom-btn" data-img="assets/images/project_glams_cdac.jpg" data-title="Gamified Learning Assessment System (GLAMS)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  Inspect UI
+                </button>
+              </div>
             </div>
-            <h3 class="project-title">Gamified Learning Assessment System (GLAMS)</h3>
-            <p class="project-summary">
-              Interactive high-concurrency assessment platform designed for continuous skill evaluation. Built to handle massive concurrent test-takers with low latency, automated scoring, and real-time candidate onboarding.
-            </p>
-            <div class="project-key-points">
-              <div class="point-item"><strong>Concurrency:</strong> Mass user ingestion workflows supporting bulk onboarding.</div>
-              <div class="point-item"><strong>Database Tuning:</strong> Deep query profiling and connection pool optimization.</div>
-              <div class="point-item"><strong>Reliability:</strong> Elimination of high-priority security vulnerabilities and leaks.</div>
-            </div>
-            <div class="project-tech-badges">
-              <span class="badge">React.js</span>
-              <span class="badge">Redux</span>
-              <span class="badge">Spring Boot</span>
-              <span class="badge">MySQL</span>
-              <span class="badge">PostgreSQL</span>
+            <div class="project-card-body">
+              <div class="project-header">
+                <span class="project-tag">Gamified Learning</span>
+                <span class="project-status">Innovation Award Winner</span>
+              </div>
+              <h3 class="project-title">Gamified Learning Assessment System (GLAMS)</h3>
+              <p class="project-summary">
+                Interactive high-concurrency assessment platform designed for continuous skill evaluation. Built to handle massive concurrent test-takers with low latency, automated scoring, and real-time candidate onboarding.
+              </p>
+              <div class="project-key-points">
+                <div class="point-item"><strong>Concurrency:</strong> Mass user ingestion workflows supporting bulk onboarding.</div>
+                <div class="point-item"><strong>Database Tuning:</strong> Deep query profiling and connection pool optimization.</div>
+                <div class="point-item"><strong>Reliability:</strong> Elimination of high-priority security vulnerabilities and leaks.</div>
+              </div>
+              <div class="project-tech-badges">
+                <span class="badge">React.js</span>
+                <span class="badge">Redux</span>
+                <span class="badge">Spring Boot</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">PostgreSQL</span>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- HONORS, CERTIFICATIONS & MENTORSHIP -->
+    <!-- HONORS & RECOGNITIONS -->
     <section class="section awards-section" id="awards">
       <div class="container">
         <div class="section-header">
@@ -541,28 +718,28 @@
         </div>
 
         <div class="awards-grid">
-          <div class="award-card">
+          <div class="award-card spotlight-card">
             <div class="award-trophy">🏆</div>
             <h3 class="award-title">Best Project Innovation Award</h3>
             <div class="award-issuer">Centre for Development of Advanced Computing (C-DAC)</div>
             <p class="award-desc">Awarded in recognition of exceptional engineering and architectural contributions to the GLAMS platform.</p>
           </div>
 
-          <div class="award-card">
+          <div class="award-card spotlight-card">
             <div class="award-trophy">🎖️</div>
             <h3 class="award-title">Indian Education Awards 2024</h3>
             <div class="award-issuer">National Recognition &bull; Emerging Technology</div>
             <p class="award-desc">Recognized for Emerging Technology of the Year at C-DAC for delivering high-impact technological solutions.</p>
           </div>
 
-          <div class="award-card">
+          <div class="award-card spotlight-card">
             <div class="award-trophy">👨‍🏫</div>
             <h3 class="award-title">Mentored 100+ Engineers</h3>
             <div class="award-issuer">Technical Sessions & Hands-on Workshops</div>
             <p class="award-desc">Conducted comprehensive training in Java, Spring Boot, React.js, and Full-Stack Engineering, guiding aspiring developers.</p>
           </div>
 
-          <div class="award-card">
+          <div class="award-card spotlight-card">
             <div class="award-trophy">🛡️</div>
             <h3 class="award-title">Cybersecurity Workshop</h3>
             <div class="award-issuer">Secure Software Development</div>
@@ -576,15 +753,15 @@
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Let's Connect</span>
+          <span class="section-badge">Initiate Collaboration</span>
           <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">Interested in discussing distributed systems, Agentic AI, or software engineering leadership? Reach out!</p>
+          <p class="section-subtitle">Looking to consult on distributed systems, enterprise full-stack engineering, or Agentic AI? Let's connect.</p>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-card spotlight-card">
           <div class="contact-info-col">
-            <h3>Direct Communication</h3>
-            <p>Feel free to connect via LinkedIn, drop an email, or schedule a technical discussion.</p>
+            <h3>Direct Channels</h3>
+            <p>I am always open to exploring high-impact senior engineering roles, architectural discussions, and technical collaborations.</p>
 
             <div class="contact-detail-items">
               <div class="contact-detail-item">
@@ -628,7 +805,7 @@
           </div>
 
           <div class="contact-form-col">
-            <h3>Quick Message</h3>
+            <h3>Send a Message</h3>
             <form id="contact-form" onsubmit="event.preventDefault(); window.location.href='mailto:ayush12gp@gmail.com?subject=' + encodeURIComponent(document.getElementById('msg-subject').value) + '&body=' + encodeURIComponent('From: ' + document.getElementById('msg-name').value + ' (' + document.getElementById('msg-email').value + ')\n\n' + document.getElementById('msg-body').value);">
               <div class="form-group">
                 <label for="msg-name">Your Name</label>
@@ -642,16 +819,16 @@
 
               <div class="form-group">
                 <label for="msg-subject">Subject</label>
-                <input type="text" id="msg-subject" class="form-input" placeholder="Project collaboration / Engineering role" required />
+                <input type="text" id="msg-subject" class="form-input" placeholder="Senior Engineering Role / Architecture Collaboration" required />
               </div>
 
               <div class="form-group">
                 <label for="msg-body">Message</label>
-                <textarea id="msg-body" class="form-textarea" rows="4" placeholder="Hello Ayush, let's connect regarding..." required></textarea>
+                <textarea id="msg-body" class="form-textarea" rows="4" placeholder="Hello Ayush, let's discuss..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
-                <span>Send Message</span>
+                <span>Dispatch Email</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               </button>
             </form>
@@ -661,22 +838,35 @@
     </section>
   </main>
 
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close modal">&times;</button>
+      <h3 id="lightbox-title" class="lightbox-title">System UI Preview</h3>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="System Preview" />
+      </div>
+    </div>
+  </div>
+
   <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-left">
         <span class="brand-code">&lt;</span><span class="brand-name">Ayush Gupta</span><span class="brand-code">/&gt;</span>
-        <p class="footer-desc">Senior Software Engineer &bull; Full Stack &bull; Agentic AI</p>
+        <p class="footer-desc">Senior Software Engineer &bull; Full-Stack &bull; Distributed Systems &bull; Agentic AI</p>
       </div>
 
       <div class="footer-links">
         <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:ayush12gp@gmail.com">Email</a>
+        <a href="tel:+918650023533">Phone</a>
       </div>
 
       <div class="footer-copy">
-        &copy; <span id="current-year">2026</span> Ayush Gupta. Built with modern web engineering standards.
+        &copy; <span id="current-year">2026</span> Ayush Gupta. Engineered with modern web standards and high-availability design principles.
       </div>
     </div>
   </footer>

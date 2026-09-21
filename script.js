@@ -1,5 +1,6 @@
 /**
- * Ayush Gupta - Interactive Web Portfolio Logic
+ * Ayush Gupta - Senior Engineering Portfolio
+ * Interactive Architecture & UI Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-expanded', isOpen.toString());
     });
 
-    // Close menu when clicking on a link
     navMenu.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
 
   const onScroll = () => {
-    const scrollPos = window.scrollY + 120;
+    const scrollPos = window.scrollY + 140;
     sections.forEach(section => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let phraseIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  let typeSpeed = 90;
+  let typeSpeed = 80;
 
   function typeCycle() {
     if (!typewriterEl) return;
@@ -73,28 +73,99 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isDeleting) {
       typewriterEl.textContent = currentPhrase.substring(0, charIndex - 1);
       charIndex--;
-      typeSpeed = 40;
+      typeSpeed = 35;
     } else {
       typewriterEl.textContent = currentPhrase.substring(0, charIndex + 1);
       charIndex++;
-      typeSpeed = 90;
+      typeSpeed = 80;
     }
 
     if (!isDeleting && charIndex === currentPhrase.length) {
       isDeleting = true;
-      typeSpeed = 2000; // Pause at full word
+      typeSpeed = 2200;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      typeSpeed = 400; // Short pause before typing next
+      typeSpeed = 350;
     }
 
     setTimeout(typeCycle, typeSpeed);
   }
 
-  setTimeout(typeCycle, 800);
+  setTimeout(typeCycle, 600);
 
-  // 5. Interactive Skills Filter
+  // 5. Animated Number Counters
+  const countElements = document.querySelectorAll('.metric-number[data-target]');
+  let hasAnimatedCount = false;
+
+  const animateCounters = () => {
+    countElements.forEach(el => {
+      const target = parseInt(el.getAttribute('data-target'), 10);
+      const duration = 1600;
+      const stepTime = 25;
+      const totalSteps = duration / stepTime;
+      const increment = target / totalSteps;
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          el.textContent = target;
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current);
+        }
+      }, stepTime);
+    });
+  };
+
+  const metricsSection = document.querySelector('.metrics-section');
+  if (metricsSection && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !hasAnimatedCount) {
+          hasAnimatedCount = true;
+          animateCounters();
+        }
+      });
+    }, { threshold: 0.25 });
+    observer.observe(metricsSection);
+  } else {
+    animateCounters();
+  }
+
+  // 6. Interactive Architecture Terminal Live Simulation
+  const streamMsgEl = document.getElementById('terminal-stream-msg');
+  const terminalMessages = [
+    'Spring Cloud Gateway: Routing traffic to 8 cluster nodes...',
+    'Kafka Consumer: Processed 4,200 batch attendance events...',
+    'RAG Vector Search: Similarity score 0.94 | Chunk latency 18ms...',
+    'JWT RBAC: Enforcing multi-tier role authorization...',
+    'PostgreSQL Connection Pool: 98% idle, zero connection wait...',
+    'Cluster Health Check: All 8 microservices responding (p99: 14ms)...'
+  ];
+  let termMsgIdx = 0;
+
+  if (streamMsgEl) {
+    setInterval(() => {
+      termMsgIdx = (termMsgIdx + 1) % terminalMessages.length;
+      streamMsgEl.textContent = terminalMessages[termMsgIdx];
+    }, 3200);
+  }
+
+  // 7. Ambient Mouse Spotlight Effect on Cards
+  const spotlightCards = document.querySelectorAll('.spotlight-card');
+  spotlightCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // 8. Interactive Skills Filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const skillCards = document.querySelectorAll('.skill-card');
 
@@ -112,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
           card.style.opacity = '0';
           setTimeout(() => {
             card.style.opacity = '1';
-          }, 40);
+          }, 30);
         } else {
           card.classList.add('hidden');
         }
@@ -120,7 +191,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. Copy Email with Toast Feedback
+  // 9. Image Lightbox Modal
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxTitle = document.getElementById('lightbox-title');
+  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxBackdrop = document.getElementById('lightbox-backdrop');
+  const zoomBtns = document.querySelectorAll('.zoom-btn');
+
+  function openLightbox(src, title) {
+    if (!lightboxModal || !lightboxImg) return;
+    lightboxImg.src = src;
+    if (lightboxTitle) lightboxTitle.textContent = title;
+    lightboxModal.classList.add('open');
+    lightboxModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove('open');
+    lightboxModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  zoomBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const imgPath = btn.getAttribute('data-img');
+      const title = btn.getAttribute('data-title') || 'System Preview';
+      openLightbox(imgPath, title);
+    });
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightboxModal && lightboxModal.classList.contains('open')) {
+      closeLightbox();
+    }
+  });
+
+  // 10. Copy Email with Toast Feedback
   const copyBtn = document.getElementById('btn-copy-email');
   const copyStatus = document.getElementById('copy-status');
   const toast = document.getElementById('toast');
@@ -149,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Background Constellation Particle Canvas
+  // 11. Background Constellation Particle Canvas
   const canvas = document.getElementById('particle-canvas');
   if (canvas) {
     const ctx = canvas.getContext('2d');

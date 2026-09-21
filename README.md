@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,24,38,15,32,67&height=220&section=header&text=Ayush%20Gupta&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Senior%20Software%20Engineer%20%7C%20Full%20Stack%20%26%20Distributed%20Systems&descAlignY=60&descAlign=50&descSize=20" width="100%" alt="Ayush Gupta Banner"/>
+  <img src="https://raw.githubusercontent.com/AyushGupta04/AyushGupta04/main/assets/images/header-banner.svg" width="100%" alt="Ayush Gupta - Senior Software Engineer" />
 
   <!-- Dynamic Typing Headline -->
   <a href="https://git.io/typing-svg">
@@ -229,6 +229,6 @@ Experienced **Senior Software Engineer** with **6+ years** architecting, enginee
   <br/><br/>
 
   <!-- Footer Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=14,24,38,15,32,67&height=100&section=footer" width="100%" alt="Footer Banner"/>
+  <img src="https://raw.githubusercontent.com/AyushGupta04/AyushGupta04/main/assets/images/footer-banner.svg" width="100%" alt="Footer Banner"/>
 
 </div>

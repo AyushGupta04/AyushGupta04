@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Gupta | Senior Software Engineer & Full-Stack Architect</title>
+  <meta name="description" content="Portfolio of Ayush Gupta - Senior Software Engineer with 6+ years specializing in Java, Spring Boot, React.js, Python, Distributed Systems, and Agentic AI/RAG." />
+  <meta name="keywords" content="Ayush Gupta, Senior Software Engineer, Full Stack, Spring Boot, React.js, Python, RAG, LangChain, C-DAC, Microservices" />
+  <meta name="author" content="Ayush Gupta" />
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ayush Gupta | Senior Software Engineer & Full-Stack Architect" />
+  <meta property="og:description" content="6+ years of architecting scalable enterprise systems, national-scale portals at C-DAC, and cutting-edge GenAI/RAG assistants." />
+  <meta property="og:url" content="https://ayushgupta04.github.io/AyushGupta04/" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Glow & Particle Canvas -->
+  <div class="bg-glow bg-glow-top"></div>
+  <div class="bg-glow bg-glow-middle"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Glassmorphism Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Ayush Gupta Home">
+        <span class="brand-code">&lt;</span><span class="brand-name">Ayush</span><span class="brand-accent">.Dev</span><span class="brand-code">/&gt;</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#awards" class="nav-link">Honors</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="mailto:ayush12gp@gmail.com" class="btn btn-sm btn-primary" id="header-cta-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Get in Touch
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          <span>Senior Software Engineer &bull; Available for Impactful Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Ayush Gupta</span>
+        </h1>
+
+        <div class="hero-role-wrapper">
+          <span class="role-prefix">Specialized in</span>
+          <span class="typewriter-text" id="typewriter-text">Full-Stack Architecture</span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-description">
+          Senior Full-Stack Engineer with <strong>6+ years</strong> architecting resilient, enterprise-scale production systems in <strong>Java, Spring Boot, React.js, and Python</strong>. Leading national-scale initiatives at <strong>C-DAC</strong> and engineering state-of-the-art <strong>Agentic AI & RAG</strong> solutions.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-lg btn-primary" id="hero-view-work-btn">
+            <span>Explore Featured Work</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-lg btn-secondary" id="hero-contact-btn">
+            <span>Connect With Me</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+          <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" id="hero-github-btn" aria-label="Ayush Gupta GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-glass" id="hero-linkedin-btn" aria-label="Ayush Gupta LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS & IMPACT COUNTER -->
+    <section class="metrics-section" aria-label="Career Highlights and Metrics">
+      <div class="container metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number">6+</div>
+          <div class="metric-label">Years Production Experience</div>
+          <div class="metric-sub">Enterprise Java, React & Python</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">100+</div>
+          <div class="metric-label">Engineers & Students Mentored</div>
+          <div class="metric-sub">Full-Stack & System Design</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">2</div>
+          <div class="metric-label">Prestigious Honors Won</div>
+          <div class="metric-sub">Innovation & Emerging Tech Awards</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number">50+</div>
+          <div class="metric-label">Production Defects Resolved</div>
+          <div class="metric-sub">99.9% High-Availability Uptime</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Leadership & Craft</span>
+          <h2 class="section-title">Architecting Scalable Solutions with Precision</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Full-Stack Engineer & Tech Lead</h3>
+            <p>
+              I specialize in engineering high-throughput, secure distributed systems and intuitive user interfaces. With over 6 years of experience spanning backend architecture, microservices, database tuning, and frontend state management, I have spearheaded mission-critical platforms at the <strong>Centre for Development of Advanced Computing (C-DAC)</strong>.
+            </p>
+            <p>
+              My recent focus centers around integrating <strong>Generative AI, Retrieval-Augmented Generation (RAG), and Agentic Workflows</strong> with enterprise application backends, combining cutting-edge LLM orchestration with robust Spring Boot and FastAPI microservices.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">🏛️</div>
+                <div>
+                  <strong>National Scale Platforms</strong>
+                  <p>Developed AETP and GLAMS platforms at C-DAC handling multi-tenant workflows and high-concurrency workloads.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">⚡</div>
+                <div>
+                  <strong>Performance Optimization</strong>
+                  <p>Boosted frontend page speeds by ~30% and optimized database queries, connection pooling, and indexing.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🤖</div>
+                <div>
+                  <strong>Agentic AI & LLMs</strong>
+                  <p>Designed end-to-end RAG workflows with LangChain, LangGraph, vector search, and containerized microservices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="profile-card">
+              <div class="profile-avatar-wrap">
+                <div class="profile-avatar-placeholder">AG</div>
+              </div>
+              <h3 class="profile-name">Ayush Gupta</h3>
+              <p class="profile-title">Senior Software Engineer</p>
+              <div class="profile-org">Centre for Development of Advanced Computing (C-DAC)</div>
+
+              <div class="profile-details-list">
+                <div class="detail-row">
+                  <span class="detail-label">Location:</span>
+                  <span class="detail-value">India</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Experience:</span>
+                  <span class="detail-value">6+ Years</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Education:</span>
+                  <span class="detail-value">PGDAC (C-DAC) &bull; B.Tech</span>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Email:</span>
+                  <a href="mailto:ayush12gp@gmail.com" class="detail-link">ayush12gp@gmail.com</a>
+                </div>
+                <div class="detail-row">
+                  <span class="detail-label">Phone:</span>
+                  <a href="tel:+918650023533" class="detail-link">+91-86500-23533</a>
+                </div>
+              </div>
+
+              <div class="profile-socials">
+                <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:ayush12gp@gmail.com" aria-label="Email" class="social-icon-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL ARSENAL & SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Core Competencies</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+          <p class="section-subtitle">A balanced tech stack designed for distributed reliability, performance, and developer velocity.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-container">
+          <button class="filter-btn active" data-filter="all" id="skill-filter-all">All Capabilities</button>
+          <button class="filter-btn" data-filter="backend" id="skill-filter-backend">Backend & Architecture</button>
+          <button class="filter-btn" data-filter="frontend" id="skill-filter-frontend">Frontend & UI</button>
+          <button class="filter-btn" data-filter="ai" id="skill-filter-ai">Agentic AI & LLMs</button>
+          <button class="filter-btn" data-filter="data" id="skill-filter-data">Databases & DevOps</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Backend & Arch -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">☕</div>
+            <h4 class="skill-title">Java & Spring Boot</h4>
+            <p class="skill-desc">Spring Security, JPA/Hibernate, Actuator, Microservices, and REST API engineering for high concurrency.</p>
+            <span class="skill-tag">Expert &bull; 6+ Years</span>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">🛡️</div>
+            <h4 class="skill-title">Auth & RBAC</h4>
+            <p class="skill-desc">JWT token lifecycles, OAuth2, granular Role-Based Access Control, session management with Passport.js.</p>
+            <span class="skill-tag">Enterprise Security</span>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">📡</div>
+            <h4 class="skill-title">Kafka & Microservices</h4>
+            <p class="skill-desc">Event-driven architecture, asynchronous message queues with Apache Kafka, and WebSocket real-time feeds.</p>
+            <span class="skill-tag">Distributed Systems</span>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon-wrap">🟢</div>
+            <h4 class="skill-title">Node.js & Python</h4>
+            <p class="skill-desc">Express services, Python FastAPI async endpoints, automation scripts, and backend integrations.</p>
+            <span class="skill-tag">Full-Stack Polyglot</span>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">⚛️</div>
+            <h4 class="skill-title">React.js & Redux</h4>
+            <p class="skill-desc">SPA architecture, Redux Toolkit, custom hooks, virtual DOM optimization, and component modularity.</p>
+            <span class="skill-tag">Advanced UI</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">📘</div>
+            <h4 class="skill-title">TypeScript & JavaScript</h4>
+            <p class="skill-desc">Strict type safety, ES6+ idioms, asynchronous patterns, and cross-browser resilience.</p>
+            <span class="skill-tag">Core Frontend</span>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon-wrap">🎨</div>
+            <h4 class="skill-title">Tailwind CSS & Material UI</h4>
+            <p class="skill-desc">Accessible UI systems, responsive grids, dark modes, animations, and GIGW compliance styling.</p>
+            <span class="skill-tag">Design Systems</span>
+          </div>
+
+          <!-- AI & LLM -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon-wrap">🧠</div>
+            <h4 class="skill-title">RAG & Vector Search</h4>
+            <p class="skill-desc">Retrieval-Augmented Generation workflows over enterprise documents using vector embeddings and similarity index.</p>
+            <span class="skill-tag">GenAI Systems</span>
+          </div>
+
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon-wrap">🦜</div>
+            <h4 class="skill-title">LangChain & LangGraph</h4>
+            <p class="skill-desc">Multi-agent orchestration, stateful agent graphs, memory persistence, and tool-augmented reasoning.</p>
+            <span class="skill-tag">Agentic AI</span>
+          </div>
+
+          <div class="skill-card" data-category="ai">
+            <div class="skill-icon-wrap">🤖</div>
+            <h4 class="skill-title">AI Pair Programming</h4>
+            <p class="skill-desc">Supercharging engineering velocity via Claude Code, GitHub Copilot, and LLM-assisted code review pipelines.</p>
+            <span class="skill-tag">Developer Velocity</span>
+          </div>
+
+          <!-- Databases & DevOps -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon-wrap">🐘</div>
+            <h4 class="skill-title">PostgreSQL & MySQL</h4>
+            <p class="skill-desc">Complex query tuning, schema modeling, transaction isolation, index optimization, and connection pools.</p>
+            <span class="skill-tag">Relational Data</span>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon-wrap">🍃</div>
+            <h4 class="skill-title">MongoDB</h4>
+            <p class="skill-desc">Document storage, aggregation pipelines, flexible schema designs, and indexing strategies.</p>
+            <span class="skill-tag">NoSQL Data</span>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon-wrap">🐳</div>
+            <h4 class="skill-title">Docker & AWS</h4>
+            <p class="skill-desc">Containerization, multi-stage builds, cloud infrastructure on AWS, CI/CD pipelines with GitHub Actions.</p>
+            <span class="skill-tag">DevOps & Cloud</span>
+          </div>
+
+          <div class="skill-card" data-category="data">
+            <div class="skill-icon-wrap">📊</div>
+            <h4 class="skill-title">Grafana & Elasticsearch</h4>
+            <p class="skill-desc">Centralized log aggregation, real-time metrics dashboards, observability, and production alert management.</p>
+            <span class="skill-tag">Observability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Career Trajectory</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Leading backend architecture and full-stack delivery for national-scale enterprise projects.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- C-DAC -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Software Engineer</h3>
+                  <div class="timeline-company">Centre for Development of Advanced Computing (C-DAC)</div>
+                </div>
+                <div class="timeline-period">Nov 2021 – Present</div>
+              </div>
+
+              <div class="experience-subproject">
+                <div class="subproject-title">
+                  <strong>Administrative Education Training Portal (AETP)</strong>
+                  <span class="badge-mini">Enterprise Architecture</span>
+                </div>
+                <p class="subproject-desc">Architected and developed end-to-end modules for an enterprise training management platform covering applications, dynamic approvals, calendar scheduling, attendance, and budget governance.</p>
+                <ul class="subproject-bullets">
+                  <li>Engineered robust JWT authentication and fine-grained Role-Based Access Control (RBAC) across distinct administrative tiers.</li>
+                  <li>Constructed multi-level configurable approval and rejection workflow engines evaluating dynamic business rules.</li>
+                  <li>Delivered bulk attendance exports to Excel, dynamic calendar scheduling, and automated lifecycle alerts.</li>
+                  <li>Guaranteed strict compliance with applicable GIGW (Guidelines for Indian Government Websites) standards.</li>
+                </ul>
+              </div>
+
+              <div class="experience-subproject">
+                <div class="subproject-title">
+                  <strong>Gamified Learning Assessment Management System (GLAMS)</strong>
+                  <span class="badge-mini">Award Winning Platform</span>
+                </div>
+                <p class="subproject-desc">Delivered high-throughput assessment platform across React.js, Java backend microservices, and databases under tight SLAs.</p>
+                <ul class="subproject-bullets">
+                  <li>Engineered bulk onboarding workflows to handle large-scale concurrent user registrations seamlessly.</li>
+                  <li>Optimized complex SQL queries, database indexing, and connection pools, significantly slashing API response latencies.</li>
+                  <li>Spearheaded critical production issue resolution, security hardening, and vulnerability mitigation.</li>
+                  <li>Mentored junior engineers on code quality, architecture patterns, and clean testing methodologies.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keshav Manglam Impex -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer</h3>
+                  <div class="timeline-company">Keshav Manglam Impex Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-period">Jan 2020 – Mar 2020</div>
+              </div>
+              <ul class="subproject-bullets">
+                <li>Engineered responsive React.js user interfaces with end-to-end RESTful API integrations.</li>
+                <li>Boosted frontend rendering and network efficiency, reducing application load times by <strong>~30%</strong>.</li>
+                <li>Implemented secure user session and credential handling utilizing Passport.js authentication strategies.</li>
+                <li>Coordinated in Agile sprint cadences to eliminate defects and deploy reliable client-facing features.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Balajee Infratech -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Developer</h3>
+                  <div class="timeline-company">Balajee Infratech Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-period">Jun 2018 – Jul 2019</div>
+              </div>
+              <ul class="subproject-bullets">
+                <li>Built interactive data visualization dashboards using React.js to power operational business analytics.</li>
+                <li>Investigated and resolved over <strong>50+ high-severity production defects</strong>, elevating system uptime.</li>
+                <li>Collaborated with senior architecture peers to refine frontend maintainability, testing, and component design.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Engineering Showcase</span>
+          <h2 class="section-title">Featured Enterprise & AI Projects</h2>
+          <p class="section-subtitle">Real-world systems engineered for scale, intelligent information retrieval, and high reliability.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Enterprise AI Assistant -->
+          <article class="project-card featured-highlight" id="project-ai-assistant">
+            <div class="project-header">
+              <span class="project-tag">Agentic AI / GenAI</span>
+              <span class="project-status">Featured Architecture</span>
+            </div>
+            <h3 class="project-title">AI-Powered Enterprise Knowledge Assistant</h3>
+            <p class="project-summary">
+              A full-stack RAG (Retrieval-Augmented Generation) application designed for enterprise document intelligence. Allows stakeholders to query large corpuses of technical and organizational documents via natural language conversations with cited source contexts.
+            </p>
+            <div class="project-key-points">
+              <div class="point-item"><strong>Retrieval:</strong> LangChain RAG pipeline with semantic chunking & vector search.</div>
+              <div class="point-item"><strong>Backend:</strong> High-speed asynchronous endpoints powered by Python and FastAPI.</div>
+              <div class="point-item"><strong>Frontend:</strong> Reactive conversational interface built with React.js.</div>
+              <div class="point-item"><strong>Data & Ops:</strong> PostgreSQL metadata storage & Dockerized container deployment.</div>
+            </div>
+            <div class="project-tech-badges">
+              <span class="badge">Python</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">LangChain</span>
+              <span class="badge">RAG</span>
+              <span class="badge">React.js</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Docker</span>
+            </div>
+          </article>
+
+          <!-- Project 2: AETP Platform -->
+          <article class="project-card" id="project-aetp">
+            <div class="project-header">
+              <span class="project-tag">Enterprise Web</span>
+              <span class="project-status">C-DAC Production</span>
+            </div>
+            <h3 class="project-title">Administrative Education Training Portal (AETP)</h3>
+            <p class="project-summary">
+              National-scale educational governance system architected to automate training lifecycle management, multi-tiered approval workflows, attendance records, and departmental budget allotments across institutional hierarchies.
+            </p>
+            <div class="project-key-points">
+              <div class="point-item"><strong>Security:</strong> JWT authentication paired with granular Role-Based Access Control.</div>
+              <div class="point-item"><strong>Workflows:</strong> Dynamic approval/rejection state machine evaluating business rules.</div>
+              <div class="point-item"><strong>Data Export:</strong> High-throughput bulk attendance export to Excel for administrators.</div>
+              <div class="point-item"><strong>Compliance:</strong> Built to satisfy official Indian GIGW accessibility guidelines.</div>
+            </div>
+            <div class="project-tech-badges">
+              <span class="badge">Java</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">Spring Security</span>
+              <span class="badge">JPA / Hibernate</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">REST APIs</span>
+            </div>
+          </article>
+
+          <!-- Project 3: GLAMS Platform -->
+          <article class="project-card" id="project-glams">
+            <div class="project-header">
+              <span class="project-tag">Gamified Learning</span>
+              <span class="project-status">Innovation Award Winner</span>
+            </div>
+            <h3 class="project-title">Gamified Learning Assessment System (GLAMS)</h3>
+            <p class="project-summary">
+              Interactive high-concurrency assessment platform designed for continuous skill evaluation. Built to handle massive concurrent test-takers with low latency, automated scoring, and real-time candidate onboarding.
+            </p>
+            <div class="project-key-points">
+              <div class="point-item"><strong>Concurrency:</strong> Mass user ingestion workflows supporting bulk onboarding.</div>
+              <div class="point-item"><strong>Database Tuning:</strong> Deep query profiling and connection pool optimization.</div>
+              <div class="point-item"><strong>Reliability:</strong> Elimination of high-priority security vulnerabilities and leaks.</div>
+            </div>
+            <div class="project-tech-badges">
+              <span class="badge">React.js</span>
+              <span class="badge">Redux</span>
+              <span class="badge">Spring Boot</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">PostgreSQL</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HONORS, CERTIFICATIONS & MENTORSHIP -->
+    <section class="section awards-section" id="awards">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Impact & Recognition</span>
+          <h2 class="section-title">Honors & Certifications</h2>
+          <p class="section-subtitle">Recognition for technical innovation, product impact, and mentorship contributions.</p>
+        </div>
+
+        <div class="awards-grid">
+          <div class="award-card">
+            <div class="award-trophy">🏆</div>
+            <h3 class="award-title">Best Project Innovation Award</h3>
+            <div class="award-issuer">Centre for Development of Advanced Computing (C-DAC)</div>
+            <p class="award-desc">Awarded in recognition of exceptional engineering and architectural contributions to the GLAMS platform.</p>
+          </div>
+
+          <div class="award-card">
+            <div class="award-trophy">🎖️</div>
+            <h3 class="award-title">Indian Education Awards 2024</h3>
+            <div class="award-issuer">National Recognition &bull; Emerging Technology</div>
+            <p class="award-desc">Recognized for Emerging Technology of the Year at C-DAC for delivering high-impact technological solutions.</p>
+          </div>
+
+          <div class="award-card">
+            <div class="award-trophy">👨‍🏫</div>
+            <h3 class="award-title">Mentored 100+ Engineers</h3>
+            <div class="award-issuer">Technical Sessions & Hands-on Workshops</div>
+            <p class="award-desc">Conducted comprehensive training in Java, Spring Boot, React.js, and Full-Stack Engineering, guiding aspiring developers.</p>
+          </div>
+
+          <div class="award-card">
+            <div class="award-trophy">🛡️</div>
+            <h3 class="award-title">Cybersecurity Workshop</h3>
+            <div class="award-issuer">Secure Software Development</div>
+            <p class="award-desc">Advanced workshop focusing on secure coding guidelines, OWASP vulnerability prevention, and defense-in-depth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Interested in discussing distributed systems, Agentic AI, or software engineering leadership? Reach out!</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-info-col">
+            <h3>Direct Communication</h3>
+            <p>Feel free to connect via LinkedIn, drop an email, or schedule a technical discussion.</p>
+
+            <div class="contact-detail-items">
+              <div class="contact-detail-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-val-row">
+                    <a href="mailto:ayush12gp@gmail.com" class="contact-val" id="email-link">ayush12gp@gmail.com</a>
+                    <button class="btn-copy" id="btn-copy-email" aria-label="Copy Email Address">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <span id="copy-status">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <div class="contact-label">Phone & WhatsApp</div>
+                  <a href="tel:+918650023533" class="contact-val">+91-86500-23533</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">💼</div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer" class="contact-val">linkedin.com/in/ayush-gupta-tech</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">🐙</div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/AyushGupta04</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <h3>Quick Message</h3>
+            <form id="contact-form" onsubmit="event.preventDefault(); window.location.href='mailto:ayush12gp@gmail.com?subject=' + encodeURIComponent(document.getElementById('msg-subject').value) + '&body=' + encodeURIComponent('From: ' + document.getElementById('msg-name').value + ' (' + document.getElementById('msg-email').value + ')\n\n' + document.getElementById('msg-body').value);">
+              <div class="form-group">
+                <label for="msg-name">Your Name</label>
+                <input type="text" id="msg-name" class="form-input" placeholder="e.g. Jane Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="msg-email">Your Email</label>
+                <input type="email" id="msg-email" class="form-input" placeholder="e.g. jane@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="msg-subject">Subject</label>
+                <input type="text" id="msg-subject" class="form-input" placeholder="Project collaboration / Engineering role" required />
+              </div>
+
+              <div class="form-group">
+                <label for="msg-body">Message</label>
+                <textarea id="msg-body" class="form-textarea" rows="4" placeholder="Hello Ayush, let's connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="brand-code">&lt;</span><span class="brand-name">Ayush Gupta</span><span class="brand-code">/&gt;</span>
+        <p class="footer-desc">Senior Software Engineer &bull; Full Stack &bull; Agentic AI</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/AyushGupta04" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/ayush-gupta-tech" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:ayush12gp@gmail.com">Email</a>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> Ayush Gupta. Built with modern web engineering standards.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

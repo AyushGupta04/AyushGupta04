@@ -8,7 +8,12 @@
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Senior+Software+Engineer+%40+C-DAC;Full-Stack+Architect+(Java%2C+Spring+Boot%2C+React);Enterprise+Scale+%26+Distributed+Systems;Agentic+AI+%26+RAG+Specialist;Tech+Lead+%26+Engineering+Mentor" alt="Typing SVG" />
   </a>
 
-  <br/>
+  <!-- Live Web Portfolio Button -->
+  <a href="https://ayushgupta04.github.io/AyushGupta04/">
+    <img src="https://img.shields.io/badge/🌐_Live_Interactive_Portfolio-ayushgupta04.github.io-38BDF8?style=for-the-badge&logoColor=white" alt="Live Portfolio Website" />
+  </a>
+
+  <br/><br/>
 
   <!-- Social & Contact Badges -->
   <a href="https://linkedin.com/in/ayush-gupta-tech">

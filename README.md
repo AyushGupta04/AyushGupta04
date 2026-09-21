@@ -1,3 +1,40 @@
+<div align="center">
+
+# Hi there, I'm Ayush Gupta 👋
+### Senior Software Engineer · Distributed Systems & Cloud-Native Architect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ayush_Gupta-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com)
+[![GitHub](https://img.shields.io/badge/GitHub-AyushGupta04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AyushGupta04)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayushg@cdac.in)
+
+<br/>
+
+> *"Architecting scalable, resilient microservices and high-performance distributed systems with modern enterprise engineering standards."*
+
+</div>
+
+---
+
+### 🚀 About Me
+
+- 💻 **Core Engineering**: Specialized in high-concurrency backend architectures using **Java 21**, **Spring Boot 3**, and **Spring Cloud**.
+- 🌐 **Full-Stack Proficiency**: Building responsive, modern interfaces with **React 18**, **TypeScript**, and **Vite**.
+- 🏛️ **System Design & Architecture**: Deep hands-on expertise in **Domain-Driven Design (DDD)**, **High-Level Design (HLD)**, **Low-Level Design (LLD)**, **Event Sagas**, and **Database-per-Service patterns**.
+- ⚡ **Performance & Caching**: Multi-tier caching strategies using **Redis**, atomic stock locks, and database indexing.
+- 🐳 **Cloud-Native & Containers**: Production containerization with **Docker**, **Docker Compose**, and **Nginx**.
+
+---
+
+### 🌟 Featured Flagship Project
+
+<div align="center">
+
+### [🛍️ NovaTech — Enterprise Microservices Platform](https://github.com/AyushGupta04/novatech-microservices-platform)
+*Production-grade, distributed e-commerce platform built with clean microservices principles and zero shared monolithic databases.*
+
+```
+Frontend (React 18 + TS) ──► Spring Cloud Gateway (Netty) ──► 5 Spring Boot 3 Microservices ──► MySQL 8 & Redis 7
+```
 
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg?style=flat-square&logo=openjdk)](https://github.com/AyushGupta04/novatech-microservices-platform)
 [![Spring Boot 3](https://img.shields.io/badge/Spring_Boot-3.3-brightgreen.svg?style=flat-square&logo=springboot)](https://github.com/AyushGupta04/novatech-microservices-platform)
